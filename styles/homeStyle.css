@@ -1,0 +1,88 @@
+:root {
+  --outfit-font: "Outfit", sans-serif;
+  --quattrocento-font: "Quattrocento", serif;
+  --page-padding-desktop: 48px;
+  --xl-footer: 16vh;
+}
+
+#main-page {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--page-padding-desktop);
+  min-height: calc(100% - var(--xl-footer));
+  overflow-y: auto;
+}
+
+#intro-text {
+  width: 40%;
+}
+
+#main-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#main-page #greeting h2 {
+  font-family: var(--quattrocento-font);
+  font-size: min(88px, 5vw);
+  font-weight: 200;
+}
+
+#main-description-text {
+  width: 80%;
+  padding: 48px 0;
+  font-family: var(--outfit-font);
+  font-size: 18px;
+}
+
+#portfolio-covers #food,
+#portfolio-covers #portraits {
+  height: calc(50% - 8px);
+}
+
+#portfolio-covers {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-family: var(--quattrocento-font);
+}
+
+#product,
+#food,
+#portraits {
+  position: relative;
+}
+
+#product .cover-description,
+#food .cover-description,
+#portraits .cover-description {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.468);
+  height: 64px;
+  font: var(--quattrocento-font);
+  font-size: 30px;
+  color: var(--black);
+}
+
+#food .cover-description,
+#portraits .cover-description {
+  height: 48px;
+}
+
+#product {
+  width: 50%;
+  margin-right: 16px;
+}
+
+#portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}

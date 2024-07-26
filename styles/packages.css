@@ -1,0 +1,43 @@
+:root {
+  --black: #232323;
+  --outfit-font: "Outfit", sans-serif;
+  --quattrocento-font: "Quattrocento", serif;
+  --page-padding-desktop: 48px;
+}
+
+#packages-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--page-padding-desktop);
+  overflow-x: hidden;
+  /* height: 100%; */
+}
+
+#groupped-packages {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.package-card {
+  width: 25vw;
+}
+
+#packages-page .package-name {
+  font-family: var(--quattrocento-font);
+  font-size: 30px;
+  margin: 16px 0;
+}
+
+#packages-page .package-description {
+  font-size: 18px;
+  font-family: var(--outfit-font);
+}
+
+#packages-page img {
+  width: 25vw;
+  height: 30vw;
+  object-fit: cover;
+}
