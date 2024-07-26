@@ -1,0 +1,82 @@
+:root {
+  --outfit-font: "Outfit", sans-serif;
+  --quattrocento-font: "Quattrocento", serif;
+  --page-padding-desktop: 48px;
+}
+
+#about-page {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--page-padding-desktop);
+}
+
+#about-horizontal-photo,
+#about-vertical-photo {
+  display: none;
+}
+
+#about-description {
+  width: 79%;
+}
+
+#about-photo {
+  width: 42%;
+}
+
+#about-bw-photo {
+  width: 20%;
+}
+
+#about-photo img,
+#about-bw-photo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#about-page #greeting-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+  font-family: var(--outfit-font);
+  font-size: 18px;
+}
+
+#about-page #greeting-text p {
+  width: 50%;
+}
+
+#contacts-and-text {
+  width: 50%;
+  font-family: var(--outfit-font);
+  font-size: 18px;
+}
+
+#contacts-and-text p,
+.social-link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#social-links {
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.social-link svg {
+  margin-right: 24px;
+}
+
+#contact-me {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  width: 272px;
+  height: 56px;
+}
