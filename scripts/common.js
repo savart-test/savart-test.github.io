@@ -6,9 +6,9 @@ let firstImagesLoaded = false;
 function addImageProps(numOfImages, folderName) {
   const screenWidth = window.innerWidth;
   let thumbnailPath;
-  if (screenWidth > 1500) {
+  if (screenWidth >= 1500) {
     thumbnailPath = `./assets/gallery/thumbnails/L/${folderName}`;
-  } else if (screenWidth > 800 && screenWidth < 1500) {
+  } else if (screenWidth >= 500 && screenWidth < 1500) {
     thumbnailPath = `./assets/gallery/thumbnails/M/${folderName}`;
   } else {
     thumbnailPath = `./assets/gallery/thumbnails/S/${folderName}`;
